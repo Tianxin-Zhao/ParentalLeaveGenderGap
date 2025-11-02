@@ -31,24 +31,24 @@ R script: [scripts/Cleaning_and_Processing.R](./scripts/Cleaning_and_Processing.
 - Interaction heatmap of `Mother_index × Father_index`.
 - Color-coded regression plots for maternal and paternal leave interactions.
 - All plots saved to `/Outputs` folder.
-### Representative Visuals
+
 ### Representative Visuals
 
 **1. Gender Gap by Father and Mother Policy Index**  
 Shows how the combined intensity of maternal and paternal leave policies relates to the gender gap.  
-![Gap by Father and Mother Policy](Outputs/Relationship_between_Father_Quota_Share_and_Gender_Gap.png)
+![Gap by Father and Mother Policy](outputs/Relationship_between_Father_Quota_Share_and_Gender_Gap.png)
 
 **2. Baseline Scatter: Father Quota Share vs Gender Gap**  
 Visualizes the relationship between father-specific leave as a share of total leave and the gender gap.  
-![Scatter Plot](Outputs/Relationship_between_Paid_Parental_Leave_Weeks_and_Gender_Gap.png)
+![Scatter Plot](outputs/Relationship_between_Paid_Parental_Leave_Weeks_and_Gender_Gap.png)
 
 **3. Interaction Heatmap**  
 Illustrates how maternal and paternal policy indices jointly affect the gender gap; red = higher gap, blue = lower gap.  
-![Interaction Heatmap](Outputs/Interaction_of Maternal_and_Paternal_Policy_Indices_on_Gender_Gap.png)
+![Interaction Heatmap](outputs/Interaction_of Maternal_and_Paternal_Policy_Indices_on_Gender_Gap.png)
 
 **4. Impact of Father-Specific Leave**  
 Shows how father-specific leave modifies the gender gap across levels of maternal paid leave.  
-![Father Leave Effect](Outputs/Impact _f_Father_Specific_Leave_on_Gender_Gap.png)
+![Father Leave Effect](outputs/Impact _f_Father_Specific_Leave_on_Gender_Gap.png)
 
 ##  Key Findings (Summary)
 
