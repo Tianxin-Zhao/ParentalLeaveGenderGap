@@ -44,11 +44,11 @@ Visualizes the relationship between father-specific leave as a share of total le
 
 **3. Interaction Heatmap**  
 Illustrates how maternal and paternal policy indices jointly affect the gender gap; red = higher gap, blue = lower gap.  
-![Interaction Heatmap](outputs/Interaction_of Maternal_and_Paternal_Policy_Indices_on_Gender_Gap.png)
+![Interaction Heatmap](outputs/Interaction_of_Maternal_and_Paternal_Policy_Indices_on_Gender_Gap.png)
 
 **4. Impact of Father-Specific Leave**  
 Shows how father-specific leave modifies the gender gap across levels of maternal paid leave.  
-![Father Leave Effect](outputs/Impact _f_Father_Specific_Leave_on_Gender_Gap.png)
+![Father Leave Effect](outputs/Impact_of_Father_Specific_Leave_on_Gender_Gap.png)
 
 ##  Key Findings (Summary)
 
