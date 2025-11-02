@@ -3,8 +3,8 @@
 This project explores gender disparities in parental leave uptake using national-level policy data（OECD PF2.1 and PF2.5 datasets）. The analysis examines how socioeconomic and policy factors influence male and female participation in parental leave. I calculate both direct and interaction effects of mother- and father-targeted policies using regression and visualization in R.
 
 ##  Workflow Overview
-- Scripts: [`scripts/Cleaning and Processing.R`](./scripts/Cleaning and Processing.R)
-- 
+R script: [scripts/Cleaning_and_Processing.R](./scripts/Cleaning_and_Processing.R)
+
 ### 1. Data Import and Cleaning
 - Loaded OECD PF2.1 (maternity, parental) and PF2.5 (paternal, home care) datasets.
 - Converted policy columns to numeric, standardized formats, filtered aggregate/invalid rows.
@@ -32,16 +32,23 @@ This project explores gender disparities in parental leave uptake using national
 - Color-coded regression plots for maternal and paternal leave interactions.
 - All plots saved to `/Outputs` folder.
 ### Representative Visuals
+### Representative Visuals
 
-**Gender Gap by Father and Mother Policy Index**  
-![Gap by Father and Mother Policy](Outputs/Gap_by_father_and_mother_policy.png)
+**1. Gender Gap by Father and Mother Policy Index**  
+Shows how the combined intensity of maternal and paternal leave policies relates to the gender gap.  
+![Gap by Father and Mother Policy](Outputs/Relationship_between_Father_Quota_Share_and_Gender_Gap.png)
 
-**Baseline Scatter: Father Quota Share vs Gender Gap**  
-![Scatter Plot](Outputs/Rplot01.png)
+**2. Baseline Scatter: Father Quota Share vs Gender Gap**  
+Visualizes the relationship between father-specific leave as a share of total leave and the gender gap.  
+![Scatter Plot](Outputs/Relationship_between_Paid_Parental_Leave_Weeks_and_Gender_Gap.png)
 
-**Interaction Heatmap**  
-![Interaction Heatmap](Outputs/Rplot02.png)
+**3. Interaction Heatmap**  
+Illustrates how maternal and paternal policy indices jointly affect the gender gap; red = higher gap, blue = lower gap.  
+![Interaction Heatmap](Outputs/Interaction_of Maternal_and_Paternal_Policy_Indices_on_Gender_Gap.png)
 
+**4. Impact of Father-Specific Leave**  
+Shows how father-specific leave modifies the gender gap across levels of maternal paid leave.  
+![Father Leave Effect](Outputs/Impact _f_Father_Specific_Leave_on_Gender_Gap.png)
 
 ##  Key Findings (Summary)
 

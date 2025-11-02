@@ -174,7 +174,8 @@ summary(index_model)
 ggplot(data_pf2_5, aes(x = Parental_paid, y = gap_diff)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = "lm", se = TRUE, color = "blue") +
-  labs(x = "Paid Parental Leave Weeks", y = "Gender Gap Difference (weeks)") +
+  labs(x = "Paid Parental Leave Weeks", y = "Gender Gap Difference (weeks)",
+       title = "Relationship between Paid Parental Leave Weeks and Gender Gap") +
   theme_minimal()
 
 # 6b. Interaction heatmap (Mother_index x Father_index)
@@ -185,6 +186,7 @@ ggplot(data_pf2_5, aes(x = Mother_index, y = Father_index, z = gap_diff)) +
                        midpoint = median(data_pf2_5$gap_diff)) +
   labs(x = "Mother Policy Index (binned)",
        y = "Father Policy Index (binned)",
+       title = "Interaction of Maternal and Paternal Policy Indices on Gender Gap",
        fill = "Mean Gap Diff") +
   theme_minimal()
 
@@ -193,7 +195,8 @@ ggplot(data_pf2_5, aes(x = Mother_index, y = Father_index, z = gap_diff)) +
 ggplot(data_pf2_5, aes(x = Parental_paid, y = gap_diff, color = Father_specific_Parleave)) +
   geom_point(alpha = 0.7) +
   geom_smooth(method = "lm", se = FALSE, color = "black") +
-  labs(x = "Mother Paid Parental Leave Weeks", y = "Gender Gap Difference", color = "Father Reserved Weeks") +
+  labs(x = "Mother Paid Parental Leave Weeks", y = "Gender Gap Difference", color = "Father Reserved Weeks",
+       title = "Impact of Father-Specific Leave on Gender Gap") +
   theme_minimal()
 
 
