@@ -3,11 +3,11 @@
 This project explores gender disparities in parental leave uptake using national-level policy data（OECD PF2.1 and PF2.5 datasets）. The analysis examines how socioeconomic and policy factors influence male and female participation in parental leave. I calculate both direct and interaction effects of mother- and father-targeted policies using regression and visualization in R.
 
 ##  Workflow Overview
-
+- Scripts: [`scripts/Cleaning and Processing.R`](./scripts/Cleaning and Processing.R)
+- 
 ### 1. Data Import and Cleaning
 - Loaded OECD PF2.1 (maternity, parental) and PF2.5 (paternal, home care) datasets.
 - Converted policy columns to numeric, standardized formats, filtered aggregate/invalid rows.
-- Scripts: [`Scripts/01_clean_merge.R`](./Scripts/01_clean_merge.R)
 
 ### 2. Variable Construction
 - **Dependent variables:**  
@@ -25,13 +25,13 @@ This project explores gender disparities in parental leave uptake using national
   - Tests whether maternal and paternal policy generosity interact.
 - **Index model:** `gap_diff ~ Mother_index * Father_index`
   - Examines how overall maternal vs paternal policy intensity affects the gap.
-- Scripts: [`Scripts/02_regression_plots.R`](./Scripts/02_regression_plots.R)
 
 ### 4. Visualization
 - Scatter plots showing baseline relationships.
 - Interaction heatmap of `Mother_index × Father_index`.
 - Color-coded regression plots for maternal and paternal leave interactions.
 - All plots saved to `/Outputs` folder.
+### Representative Visuals
 
 **Gender Gap by Father and Mother Policy Index**  
 ![Gap by Father and Mother Policy](Outputs/Gap_by_father_and_mother_policy.png)
@@ -67,21 +67,9 @@ This pattern supports a **structural policy framing of gender inequality**, emph
 
 - **R version:** ≥ 4.2  
 - **Libraries:** `dplyr`, `ggplot2`, `readxl`, `purrr`  
-- **Reproducibility:**  
-  1. Clone repository:  
-     ```bash
-     git clone https://github.com/Tianxin-Zhao/ParentalLeaveGenderGap.git
-     ```
-  2. Open R and set working directory to `D:/R_par/`.  
-  3. Run the script: `Scripts/Cleaning and Processing.R`  
-  4. Generated figures and outputs will appear in `/Outputs/`.
-- **Data:** Raw files in `/Rawd`; cleaned/processed datasets optionally in `/Cleaned`.  
+- **Reproducibility:** Run scripts sequentially from `/Scripts` to reproduce analyses and figures.  
+- **Data:** Raw data in `/Rawd`; cleaned/processed datasets optionally in `/Cleaned`.  
 - **Outputs:** Figures and regression tables saved in `/Outputs`.
-
-
-## Optional
-
-- **License & Citation:** MIT license recommended if sharing code publicly. Cite OECD PF2.1 and PF2.5 datasets when using the data.  
 
 ##  Author
 
