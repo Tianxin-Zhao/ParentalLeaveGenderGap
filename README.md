@@ -33,6 +33,15 @@ This project explores gender disparities in parental leave uptake using national
 - Color-coded regression plots for maternal and paternal leave interactions.
 - All plots saved to `/Outputs` folder.
 
+**Gender Gap by Father and Mother Policy Index**  
+![Gap by Father and Mother Policy](Outputs/Gap_by_father_and_mother_policy.png)
+
+**Baseline Scatter: Father Quota Share vs Gender Gap**  
+![Scatter Plot](Outputs/Rplot01.png)
+
+**Interaction Heatmap**  
+![Interaction Heatmap](Outputs/Rplot02.png)
+
 
 ##  Key Findings (Summary)
 
@@ -58,9 +67,21 @@ This pattern supports a **structural policy framing of gender inequality**, emph
 
 - **R version:** ≥ 4.2  
 - **Libraries:** `dplyr`, `ggplot2`, `readxl`, `purrr`  
-- **Reproducibility:** Run scripts sequentially from `/Scripts` to reproduce analyses and figures.  
-- **Data:** Raw data in `/Rawd`; cleaned/processed datasets optionally in `/Cleaned`.  
+- **Reproducibility:**  
+  1. Clone repository:  
+     ```bash
+     git clone https://github.com/Tianxin-Zhao/ParentalLeaveGenderGap.git
+     ```
+  2. Open R and set working directory to `D:/R_par/`.  
+  3. Run the script: `Scripts/Cleaning and Processing.R`  
+  4. Generated figures and outputs will appear in `/Outputs/`.
+- **Data:** Raw files in `/Rawd`; cleaned/processed datasets optionally in `/Cleaned`.  
 - **Outputs:** Figures and regression tables saved in `/Outputs`.
+
+
+## Optional
+
+- **License & Citation:** MIT license recommended if sharing code publicly. Cite OECD PF2.1 and PF2.5 datasets when using the data.  
 
 ##  Author
 
