@@ -61,13 +61,13 @@ Shows how father-specific leave modifies the gender gap across levels of materna
 
 ## Abstract
 
-This analysis explores cross-national variation in parental leave policies to understand how structural design contributes to gender disparities in paid leave. Using OECD PF2.1 and PF2.5 datasets (2010–2024), the study operationalizes gender gap as the difference between total paid leave weeks available to mothers and fathers. Results show that while more generous maternal benefits widen the gap, father-specific quotas and paid paternal entitlements correlate with smaller disparities. Interaction effects between maternal and paternal policy indices indicate that balanced designs—rather than simply extending leave—promote greater parity in policy outcomes.
+This analysis explores cross-national variation in parental leave policies to understand how structural design contributes to gender disparities in paid leave. Using OECD PF2.1 and PF2.5 datasets (1970–2024), the study operationalizes gender gap as the difference between total paid leave weeks available to mothers and fathers. Results show that while more generous maternal benefits widen the gap, father-specific quotas and paid paternal entitlements correlate with smaller disparities. Interaction effects between maternal and paternal policy indices indicate that balanced designs, rather than simply extending leave, promote greater parity in policy outcomes.
 
 
 ##  Discussion
 
-The findings highlight the **asymmetry in how welfare states allocate parental leave**, reinforcing traditional caregiving roles when maternal benefits dominate. However, introducing **earmarked father leave** mitigates these structural biases. The diminishing interaction effect implies that equality gains plateau once paternal leave becomes meaningful, aligning with broader gender-equality literature.  
-This pattern supports a **structural policy framing of gender inequality**, emphasizing institutional incentives over individual choices.
+The findings highlight the asymmetry in how welfare states allocate parental leave, reinforcing traditional caregiving roles when maternal benefits dominate. However, introducing earmarked father leave mitigates these structural biases. The diminishing interaction effect implies that equality gains plateau once paternal leave becomes meaningful, aligning with broader gender-equality literature.  
+This pattern supports a *structural policy framing of gender inequality, emphasizing institutional incentives over individual choices.
 
 
 ## Environment & Reproducibility
@@ -75,8 +75,8 @@ This pattern supports a **structural policy framing of gender inequality**, emph
 - **R version:** ≥ 4.2  
 - **Libraries:** `dplyr`, `ggplot2`, `readxl`, `purrr`  
 - **Reproducibility:** Run scripts sequentially from `/Scripts` to reproduce analyses and figures.  
-- **Data:** Raw data in `/Rawd`; cleaned/processed datasets optionally in `/Cleaned`.  
-- **Outputs:** Figures and regression tables saved in `/Outputs`.
+- **Data:** Raw data in `/Rawd`.
+- **Outputs:** Figures and regression tables saved in `/outputs`.
 
 ##  Author
 
